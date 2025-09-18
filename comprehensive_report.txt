@@ -1,0 +1,46 @@
+
+============================================================
+                ADVANCED LSTM ENERGY PREDICTION REPORT
+============================================================
+
+1. PROJECT OVERVIEW
+----------------------------------------
+• Objective: Predict hourly energy consumption using advanced LSTM with attention
+• Model Type: Stacked LSTM with Attention Mechanism
+• Dataset: Synthetic energy data with outliers and complex features
+• Target Variable: Energy consumption (kW)
+
+2. DATA CHARACTERISTICS
+----------------------------------------
+• Total Samples: 10,000
+• Features: 14
+• Best Sequence Length: 24 hours
+• Train/Val/Test Split: 70.0%/15.0%/15.0%
+
+3. MODEL ARCHITECTURE
+----------------------------------------
+• Input Size: 14 features
+• Best Hidden Size: 256 neurons
+• LSTM Layers: 3
+• Attention Dimension: 64
+• Dropout Rate: 0.3
+
+4. TRAINING CONFIGURATION
+----------------------------------------
+• Optimizer: AdamW
+• Learning Rate: 0.0001
+• Batch Size: 32
+• Epochs: 30
+
+5. TEST SET PERFORMANCE
+----------------------------------------
+• RMSE: 0.6429 kW
+• MAE: 0.3175 kW
+• MAPE: 6.06%
+• R² Score: 0.7441
+
+6. FILES GENERATED
+----------------------------------------
+• Model: models/best_energy_lstm_model.pth
+• Plots: prediction_analysis.png, attention_weights.png, loss_curves.png
+• Log: training.log
